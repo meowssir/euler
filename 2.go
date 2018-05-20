@@ -35,7 +35,7 @@ func fib(n uint32) uint32 {
 func main() {
 	f := fibonacci()
 	var sum uint32
-	for i := f(); i+f() <= 4000000; i += f() {
+	for i := f(); i <= 4000000; i += f() {
 		sum = i
 	}
 	fmt.Println(sum)
